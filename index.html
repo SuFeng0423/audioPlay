@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>全新 Microsoft 365 安全服务，保驾护航企业信息安全</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+
+    </style>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script src="js/autoPlayAudios.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+<body style="overflow-y: hidden;">
+    <div id="music" onclick="audioPlay()">
+        <audio controls="controls" id="bgaudio" autoplay loop hidden  >
+                    <source src="./mp3/song.ogg" type="audio/ogg">
+                    <source src="./mp3/song.wav" type="audio/wav">
+                    <source src="./mp3/song.mp3" type="audio/mpeg">
+                    你的浏览器不支持音频播放，请更新浏览器或选择其他浏览器播放。
+        </audio>
+        <img src="./images/play.png" alt="yinyue" id="audioImg">
+
+    </div>
+    <div class="arrow">
+    </div>
+    <div id="dowebok">
+        <!-- 第一页  首页-->
+        <div class="section part1">
+            <img src="./images/page_1_logo.png" alt="" id="part1_1">
+            <img src="./images/part1_top1.png" alt="" id="part1_2_1">
+            <img src="./images/part1_top2.png" alt="" id="part1_2_2">
+            <img src="./images/part1_top3.png" alt="" id="part1_2_3">
+            <!-- <img src="./images/part1_top4.png" alt="" id="part1_2_4"> -->
+
+            <img src="./images/part1_yqh.png" alt="" id="part1_3">
+            <img src="./images/part1_center.png" alt="" id="part1_4">
+            <img src="./images/part1_bottom_sj.png" alt="" id="part1_5_1">
+            <img src="./images/part1_bottom_1.png" alt="" id="part1_5_2">
+            <!-- <img src="./images/part1_bottom_2.png" alt="" id="part1_5_3"> -->
+        </div>
+        <!-- 第二页  课程页-->
+        <div class="section part2">
+            <img src="./images/part2_top1.png" alt="" id="part2_1_1">
+            <img src="./images/part2_top2.png" alt="" id="part2_1_2">
+            <img src="./images/part2_center.png" alt="" id="part2_2">
+            <img src="./images/part2_ycap.png" alt="" id="part2_3">
+            <img src="./images/part2_left.png" alt="" id="part2_4_1">
+            <img src="./images/part2_sjz.png" alt="" id="part2_4_2">
+            <img src="./images/part2_right.png" alt="" id="part2_4_3">
+            <img src="./images/part2_right_pic.png" alt="" id="part2_5">
+        </div>
+        <!-- 第三页  报名页-->
+        <div class="section part3">
+            <img src="./images/part3_top.png" alt="" id="part3_1">
+            <img src="./images/part3_content.png" alt="" id="part3_2">
+            <img src="./images/part3_jpsz.png" alt="" id="part3_3">
+            <img src="./images/part3_lw.png" alt="" id="part3_4">
+            <a href="http://www.51cie.com/Temporary/Redirect?tcid=1104&id=bg1104" class="part3_5_1 "><img src="./images/part3_bm.png " alt=" "> </a>
+        </div>
+        <!-- 第四页 现代化办公-->
+        <div class="section part4 ">
+            <img src="./images/xdhbgms.png " alt=" " id="part4_top_01">
+            <img src="./images/part4_1.png " alt=" " id="part4_2_1">
+            <img src="./images/part4_2.png " alt=" " id="part4_2_2">
+            <img src="./images/part4_3.png " alt=" " id="part4_2_3">
+            <img src="./images/part4_4.png " alt=" " id="part4_2_4">
+            <a href="https://products.office.com/zh-cn/compare-all-microsoft-office-products?tab=2" class="part4_3">
+                <img src="./images/ts365.png " alt=" ">
+            </a>
+            <a href="https://www.microsoft.com/zh-cn/windowsforbusiness" class="part4_4">
+                <img src="./images/Windows.png " alt=" ">
+            </a>
+            <a href="https://www.microsoft.com/en-us/enterprise-mobility-security" class="part4_5">
+                <img src="./images/tsEMS.png " alt=" ">
+            </a>
+
+            <a href="http://www.51cie.com/Temporary/Redirect " id="part4_6"><img src="./images/djck.png " alt=" " target="_blank "></a>
+
+        </div>
+        <!-- 第五页  在线学习平台-->
+        <div class="section part5 ">
+            <img src="./images/logo.png " alt=" " id="part5_1">
+            <img src="./images/Office 365.png " alt=" " id="part5_2">
+            <img src="./images/qiyeneibu.png " alt=" " id="part5_3">
+            <img src="./images/xuexipingtai.png " alt=" " id="part5_4">
+            <img src="./images/jiejuefangan.png " alt=" " id="part5_5">
+            <img src="./images/part5_left.png" alt=" " id="part5_6_1">
+            <img src="./images/part5_bjb.png" alt=" " id="part5_6_2">
+            <img src="./images/erweima.png " alt=" " id="part5_7">
+            <img src="./images/bushushijian.png " alt=" " id="part5_8">
+
+
+        </div>
+    </div>
+
+    <script src="./js/index.js "></script>
+    
+    <script>
+        
+        //rem
+        window.onresize = function() {
+            autoSetHtml();
+        }
+        autoSetHtml();
+
+        function autoSetHtml() {
+            // 基础值
+            var baseVal = 100;
+            // 设计稿的宽度
+            var pageWidth = 640;
+            // 当前屏幕的宽度
+            var width = document.querySelector("html ").offsetWidth;
+            // 计算fz
+            var fz = width * baseVal / pageWidth;
+            document.querySelector("html ").style.fontSize = fz + "px ";
+        }
+        window.onload = function() {
+            (function() {
+                var handle = function(event) {    
+                    event.preventDefault();
+                }
+                document.body.addEventListener('touchmove', handle, false);
+                document.body.removeEventListener('touchmove', handle, false);
+            })()
+        }
+    </script>
+</body>
+
+</html>
