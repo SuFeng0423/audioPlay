@@ -6,8 +6,9 @@ $.ajax({
     url: "http://www.bticest.com:8080/H5Service.asmx/H5?CourseId=1104&CourseTitle=全新 Microsoft 365 合规服务，助力降低企业风险",
 });
 
-	var apas = new autoPlayAudios();
-	apas.play();
+
+
+	
 //背景音乐的播放与暂停
 function audioPlay() {
     var myAudio = document.getElementById("bgaudio");
